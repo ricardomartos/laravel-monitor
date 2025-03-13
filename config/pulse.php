@@ -172,11 +172,6 @@ return [
             'directories' => explode(':', env('PULSE_SERVER_DIRECTORIES', '/')),
         ],
 
-        Recorders\Servers::class => [
-            'server_name' => 'wallet.',
-            'directories' => explode(':', env('PULSE_SERVER_DIRECTORIES', '/')),
-        ],
-
         Recorders\SlowJobs::class => [
             'enabled' => env('PULSE_SLOW_JOBS_ENABLED', true),
             'sample_rate' => env('PULSE_SLOW_JOBS_SAMPLE_RATE', 1),
