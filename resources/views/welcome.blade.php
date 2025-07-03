@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Server Status</title>
 
-
     <!-- SEO & Bot Protection -->
     <meta name="robots" content="noindex, nofollow, noarchive" />
     <meta name="googlebot" content="noindex, nofollow, noarchive" />
@@ -67,7 +66,22 @@
 </head>
 <body>
 <div class="card">
-    <h1>🟢 Server is Running</h1>
+    <h1>🟢 Server is Running </h1>
+    @unless(app()->environment('production'))
+        <div style="
+            display: inline-block;
+            margin-bottom: 0.75rem;
+            padding: 0.3rem 0.6rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #b45309;
+            background-color: #fef3c7;
+            border: 1px solid #fcd34d;
+            border-radius: 6px;
+        ">
+            Environment: {{ app()->environment() }}
+        </div>
+    @endunless
     <p>Everything is operational and responding.</p>
     <div id="timestamp">Last checked: --</div>
 </div>
