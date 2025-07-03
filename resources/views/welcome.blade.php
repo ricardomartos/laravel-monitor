@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Server Status</title>
 
-    <!-- Laravel-style Roboto font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
 
     <!-- SEO & Bot Protection -->
     <meta name="robots" content="noindex, nofollow, noarchive" />
@@ -29,7 +27,7 @@
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: sans-serif;
             background-color: var(--bg);
             color: var(--text);
             display: flex;
